@@ -1,0 +1,24 @@
+package prog.aula8;
+
+/**
+ *
+ * OPERADORES LÓGICOS 
+ * && = AND , || = OR 
+ */
+public class Aula8 {
+
+    public static void main(String[] args) {
+       
+        int idade = 18; 
+        float salario= 5000f; 
+        
+        System.out.println(idade >= 18 && salario >= 1000); // true porque as duas são verdadeiras 
+        System.out.println(idade >= 18 && salario >= 3000); // false porque uma das duas está errada , então mesmo que uma seja true , se a outra for false , ele retorna false 
+    // com o operador || = OR (OU) , basta uma das duas serem verdadeiras que ele retornará true - exemplo:
+    
+        System.out.println(idade>=16 || salario >=3000 );
+        System.out.println(idade>=16 | salario >=3000 ); // tambem pode usar assim só com um "|"
+   
+    
+    }
+}
