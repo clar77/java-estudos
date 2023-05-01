@@ -1,0 +1,24 @@
+
+package prog.aula10;
+
+public class Aula10 {
+
+    public static void main(String[] args) {
+       //* regra de negócio:
+       //idade < 15 - categoria infantil 
+       // idade >=15 && idade <18 - categoria juvenil 
+       // idade > 18 - categoria adulto 
+int idade = 20;
+
+if (idade<15) {
+    System.out.println("categoria infantil");
+}
+else if (idade >=15 && idade<18) {
+    System.out.println("categoria juvenil");
+}
+else   {
+    System.out.println("categoria adulto");
+}
+    }}
+    
+    // isso imprime : categoria adulto
