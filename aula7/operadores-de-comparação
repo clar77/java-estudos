@@ -1,1 +1,39 @@
+package prog.aula7;
 
+/**
+ *
+ * operador resto e operadores de comparação
+ */
+public class Aula7 {
+
+    public static void main(String[] args) {
+        
+   // operadores de comparação 
+   // < menor que , <= mennor ou igual 
+   // > maior que , >=maior ou igual 
+    // == igualdade 
+    // != diferença 
+    
+    // todos esses operadores irão retornar true ou false
+    // ou seja , o resultado de qualquer operação com operador de comparação vai ser um booleano
+      
+    boolean dezMaiorQueVinte = 10 > 20; 
+    boolean dezMaiorQueVinteOuIgual = 10 >= 20; 
+    boolean dezMenorQue = 10 <20; 
+    boolean dezMenorOuIgual = 10 <=20; 
+        System.out.println(dezMaiorQueVinte);
+        System.out.println(dezMaiorQueVinteOuIgual);
+        System.out.println(dezMenorQue);
+        System.out.println(dezMenorOuIgual);
+        System.out.println(5==5);
+        System.out.println(5 != 5);
+       
+    }
+}
+// isso retorna = 
+false 
+false 
+true 
+true 
+true 
+false 
