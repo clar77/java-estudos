@@ -1,0 +1,12 @@
+package prog.aulajavastring;
+
+public class Aulajavastring {
+
+    public static void main(String[] args) {
+        String nome = "Julio";
+        String endereco = "Rua consolação 104";
+        String telefone = "11 969974291";
+        
+        System.out.println("Meu nome é "+nome+ ", eu moro na " +endereco+ " , meu telefone é " +telefone+ "");
+    }
+}
