@@ -1,0 +1,26 @@
+package prog.aula10;
+
+public class Aula10 {
+
+    public static void main(String[] args) {
+        int idade = 20;
+        float salario = 1400; 
+        
+        if (idade >18) { 
+            System.out.println("entrou no clube");
+        }
+        
+        int idade2 = 16; 
+        
+        if (idade2 > 18) {
+            System.out.println("entrou no clube");
+        }
+        else {
+            System.out.println("não entrou no clube");
+        }
+    }
+}
+
+// isso imprime: 
+entrou no clube 
+não entrou no clube 
