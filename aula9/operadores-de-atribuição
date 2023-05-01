@@ -1,0 +1,37 @@
+package prog.aula9;
+
+public class Aula9 {
+    public static void main(String[] args) {
+        // OPERADORES DE ATRIBUIÇÃO : = , += ,-=, *= , /=, %= 
+        int salario1 = 1800;
+        
+        //ESSAS DUAS LINHAS FAZEM A MESMA COISA POREM A SEGUNDA OPÇÃO TE FAZ ESCREVER MENOS CÓDIGO
+        //salario1= salario+1000;
+        
+        salario1 +=1000; 
+        
+        System.out.println(salario1);
+        
+        int salario2 = 1700;
+        salario2-=1000; // nesse caso estou subtraindo 1000 da variavel salario2
+        System.out.println(salario2);
+        
+        int salario3 = 1500; 
+        salario3*= 0.1; 
+        System.out.println(salario3);
+        int salario34 = 1000; 
+        
+        salario34 = salario34 + (int)(salario34 *= 0.1);
+        System.out.println(salario34);
+        
+        int numero= 11;
+        numero %=2;
+        System.out.println(numero);
+                }}
+
+// esses códigos retornaram :
+// 2800
+// 700
+// 150
+// 1100
+// 1
