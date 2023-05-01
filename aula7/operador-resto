@@ -1,0 +1,28 @@
+package prog.aula7;
+
+/**
+ *
+ * operador resto e operadores de comparação
+ */
+public class Aula7 {
+
+    public static void main(String[] args) {
+        int resto1 = 20%2; //para checar se um numero é par ou impar - se for par vai ser divisivel por 2 
+        int resto2 = 21%2;                                                               //e o resto da divisao vai ser 0
+        System.out.println("o resto da divisao1 é "+ resto1); //resto1 é par 
+        System.out.println("o resto da divisao2 é "+ resto2); // resto2 nao é par 
+    
+//isso retorna : 
+//o resto da divisao1 é 0
+//o resto da divisao2 é 1
+
+int numeroInteiro = 40; 
+   long numeroLong = 200000l; 
+   double numeroDouble = 10d; 
+   float numeroFloat = 20f;
+   numeroFloat = (float) numeroDouble;
+        System.out.println(numeroDouble);
+        } 
+           }
+        
+        //isso retorna = 10.0
