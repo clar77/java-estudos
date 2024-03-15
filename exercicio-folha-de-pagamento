@@ -1,0 +1,32 @@
+double impostoretna;
+        System.out.println("Digite o valor da sua hora de trabalho");
+        double valorHora = leitura.nextDouble();
+
+        System.out.println("Quantas horas voce trabalhou no mes ?");
+        int horaTrabalho = leitura.nextInt();
+
+        double salarioBruto = valorHora * horaTrabalho;
+
+        if(salarioBruto <= 900){
+            impostoretna = 0;
+        }else if(salarioBruto <= 1500){
+            impostoretna = salarioBruto *0.05;
+        }else if(salarioBruto <= 2500){
+            impostoretna = salarioBruto * 0.1;
+        }else{
+            impostoretna = salarioBruto * 0.2;
+        }
+
+        double descontoInss = salarioBruto * 0.1;
+        double fgts = salarioBruto * 0.11;
+        double descontosindicato = salarioBruto *0.03;
+
+        double totaldesconto = (descontoInss + impostoretna) + descontosindicato;
+        double salarioliquido = salarioBruto - totaldesconto;
+
+        System.out.println("Salario Bruto === " + salarioBruto);
+        System.out.println("(-) Imposto de Renda === "+ impostoretna);
+        System.out.println("(-) INSS === "+ descontoInss);
+        System.out.println("(-) FGTS === "+ fgts);
+        System.out.println(" Total de Desconto = "+ totaldesconto);
+        System.out.println("Salario Liquido === "+ salarioliquido);
