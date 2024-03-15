@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner leitura = new Scanner(System.in);
+
+        /*System.out.println("Qual a sua idade ? ");
+        int idade = leitura.nextInt();
+
+        if(idade >= 18){
+            System.out.println(" Bem vindo ao sistema");
+        }else{
+            System.out.println("Ops, voce nao pode acessar o sistema!!");
+        }
+
+
+        System.out.println("Digite sua nota final");
+        double nota = leitura.nextDouble();
+
+        if(nota >= 7.0) {
+            System.out.println("Aprovado");
+        }else if(nota >= 6.0){
+            System.out.println("Recuperacao");
+            System.out.println("Digite sua nota da recuperação");
+            double notarecuperacao = leitura.nextDouble();
+            if(notarecuperacao >= 5){
+                System.out.println("Aprovado");
+            }else{
+                System.out.println("Reprovado");
+            }
+        }else{
+            System.out.println("Reprovado");
+        }
+*/
+
+        System.out.println("Selecione uma das opções do menu");
+        System.out.println("1 - Verificar se voce foi aprovado");
+        System.out.println("2 - Verificar o seu salario liquido");
+        System.out.println("3 - Verificar se voce é maior ou menor de idade");
+        int diasemana = leitura.nextInt();
+
+        switch (diasemana){
+            case 1:
+                System.out.println("Digite sua nota final");
+                double nota = leitura.nextDouble();
+
+                if(nota >= 7.0) {
+                    System.out.println("Aprovado");
+                }else if(nota >= 6.0){
+                    System.out.println("Recuperacao");
+                    System.out.println("Digite sua nota da recuperação");
+                    double notarecuperacao = leitura.nextDouble();
+                    if(notarecuperacao >= 5){
+                        System.out.println("Aprovado");
+                    }else{
+                        System.out.println("Reprovado");
+                    }
+                }else{
+                    System.out.println("Reprovado");
+                }
+                break;
+            case 2:
+                double impostoretna;
+                System.out.println("Digite o valor da sua hora de trabalho");
+                double valorHora = leitura.nextDouble();
+
+                System.out.println("Quantas horas voce trabalhou no mes ?");
+                int horaTrabalho = leitura.nextInt();
+
+                double salarioBruto = valorHora * horaTrabalho;
+
+                if(salarioBruto <= 900){
+                    impostoretna = 0;
+                }else if(salarioBruto <= 1500){
+                    impostoretna = salarioBruto *0.05;
+                }else if(salarioBruto <= 2500){
+                    impostoretna = salarioBruto * 0.1;
+                }else{
+                    impostoretna = salarioBruto * 0.2;
+                }
+
+                double descontoInss = salarioBruto * 0.1;
+                double fgts = salarioBruto * 0.11;
+                double descontosindicato = salarioBruto *0.03;
+
+                double totaldesconto = (descontoInss + impostoretna) + descontosindicato;
+                double salarioliquido = salarioBruto - totaldesconto;
+
+                System.out.println("Salario Bruto === " + salarioBruto);
+                System.out.println("(-) Imposto de Renda === "+ impostoretna);
+                System.out.println("(-) INSS === "+ descontoInss);
+                System.out.println("(-) FGTS === "+ fgts);
+                System.out.println(" Total de Desconto = "+ totaldesconto);
+                System.out.println("Salario Liquido === "+ salarioliquido);
+                break;
+            case 3:
+                System.out.println("Qual a sua idade ? ");
+                int idade = leitura.nextInt();
+
+                if(idade >= 18){
+                    System.out.println(" Voce é Maior de idade");
+                }else{
+                    System.out.println("Voce é menor de idade!!");
+                }
+                break;
+            default:
+                System.out.println("Opção Invalida");
+        }
+
+
+    }
+}
