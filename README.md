@@ -1,3 +1,3 @@
-# java-semestre1-programacao-de-solucoes-computacionais
+# java-estudos
 
-códigos de estudo do primeiro semestre da faculdade
+códigos de bootcamp que estou fazendo e meus estudos paralelos.
