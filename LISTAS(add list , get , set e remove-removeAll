@@ -1,0 +1,106 @@
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Main {
+
+    public static void main(String[] args) {
+
+        // =================METODO GET ==================
+
+        // declarando listas
+      //  List <String> lista_string = new ArrayList<String>();
+// explicando método get = mostrar um dado de uma posição especifica
+
+        // METODO GET
+
+       /* Scanner leitura = new Scanner(System.in);
+        String n;
+        lista_string.add("Soul On");
+        lista_string.add("Curso Java");
+        lista_string.add("Yasmin");
+        System.out.println("================ Metodo GET ====================");
+        System.out.println(lista_string.get(0));
+
+// ======================= METODO SET ===============================================================
+
+*/
+    /*    List <String> lista_string = new ArrayList<String>();
+// explicando método set = modifica algum valor especifico dentro da lista
+
+        // METODO SET
+
+        Scanner leitura = new Scanner(System.in);
+        String n;
+        lista_string.add("Soul On");
+        lista_string.add("Curso Java");
+        lista_string.add("Yasmin");
+        System.out.println("================ Metodo SET ====================");
+        System.out.println(lista_string.set(0,"Curso SoulOn"));
+
+for (String i : lista_string) {
+    System.out.println(i); */
+//======================================= ULTIMA AULA ====================================
+/*
+        List <String> lista_string = new ArrayList<String>();
+        Scanner leitura = new Scanner(System.in);
+        String n;
+        lista_string.add("Soul On");
+        lista_string.add("Curso Java");
+        lista_string.add("Yasmin");
+        System.out.println("Lista sem ordenar");
+
+        for (String i : lista_string) {
+            System.out.println(i);
+    }
+
+        System.out.println("Lista ordenada");
+// ORDENAR UMA LISTA , APENAS COM UMA FUNÇÃO
+
+        Collections.sort(lista_string);
+        for (String i : lista_string) {
+            System.out.println(i);
+
+ */
+
+        //======================= REMOVE ================================
+// REMOVER UM ELEMENTO ESPECÍFICO
+/*
+        List <String> lista_string = new ArrayList<String>();
+        Scanner leitura = new Scanner(System.in);
+        String n;
+        lista_string.add("Soul On");
+        lista_string.add("Curso Java");
+        lista_string.add("Yasmin");
+        System.out.println("Lista sem remover");
+
+        for (String i : lista_string) {
+            System.out.println(i);
+        }
+        System.out.println("Lista removida");
+        lista_string.remove(1);
+        for (String i : lista_string) {
+            System.out.println(i);
+        } */
+
+
+        // ==================REMOVE ALL=========================
+
+        List <String> lista_string = new ArrayList<String>();
+        Scanner leitura = new Scanner(System.in);
+        String n;
+        lista_string.add("Soul On");
+        lista_string.add("Curso Java");
+        lista_string.add("Yasmin");
+        System.out.println("Lista sem remover");
+
+        for (String i : lista_string) {
+            System.out.println(i);
+        }
+        System.out.println("Lista removida");
+        lista_string.removeAll(lista_string);
+        for (String i : lista_string) {
+            System.out.println(i);
+        }
+    }
+}
